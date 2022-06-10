@@ -1,3 +1,27 @@
+.moviesnav {
+    background: var(--color-darkpink);
+    padding: 0px 5vw;
+    display: flex;
+    align-items: center;
+}
+
+.moviesnav h2, .moviesnav a {
+    margin-right: 2rem;
+    color: var(--color-white);
+}
+
+.moviesnav h2 {
+    font-size: min(35px, 10vw);
+}
+
+.moviesnav a {
+    font-size: min(20px, 8vw);
+}
+
+.moviesnav a:hover {
+    color: var(--color-pink);
+}
+
 .movie {
     background: var(--color-darkpink);
     width: 100%;
