@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --title: 'Secular one', sans-serif;
+    --text: 'Manrope', sans-serif;
+    --color-white: #F9F9F9;
+    --color-gray: #141414;
+    --color-lightgray:#696969;
+    --color-pink: #FF73A6;
+    --color-darkpink: #48002E;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title);
+}
+
+p, a, button, input, i, li {
+    font-family: var(--text);
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 120px;
+}

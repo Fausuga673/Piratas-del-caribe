@@ -1,0 +1,63 @@
+.start {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    padding: 0 5vw;
+    background-image: linear-gradient(
+        0deg,
+        var(--color-darkpink) 5%,
+        rgba(0, 0, 0, 0)
+    ), url(../images/thebatmanbackground.jpg);
+    background-size: cover;
+}
+
+.start__article {
+    color: var(--color-white);
+    text-align: justify;
+}
+
+.start__article h2 {
+    font-size: min(50px, 15vw);
+}
+
+.start__article p {
+    font-size: min(18px, 7vw);
+}
+
+.start__article button {
+    background: var(--color-pink);
+    border: .5px solid var(--color-pink);
+    border-radius: 100px;
+    padding: min(15px, 5vw);
+    color: var(--color-white);
+    font-size: min(20px, 10vw);
+    display: flex;
+    align-items: center;
+}
+
+.start__article button i {
+    margin-right: 10px;
+}
+
+.start__article button:hover {
+    box-shadow: 0 0 40px rgba(72, 0, 46, .5);
+    cursor: pointer;
+    animation: button .5s alternate-reverse;
+}
+
+.start__article--item {
+    margin-bottom: 1.2rem;
+}
+
+@keyframes button {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+}
+
+@media (min-width: 700px) {
+    .start {
+        grid-template-columns: 50% 50%;
+    }
+}

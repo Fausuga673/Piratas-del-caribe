@@ -10,60 +10,146 @@
 
     <script src="https://kit.fontawesome.com/a7ae13901f.js" crossorigin="anonymous"></script>
 
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Secular+One&display=swap" rel="stylesheet">
+    
+    <!-- STYLES -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/start.css">
+    <link rel="stylesheet" href="css/movie.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__logo">
-            <h1><a href="">Piratas del Caribe</a></h1>
+            <a href="#start"><h1>Piratas del caribe</h1></a>
         </div>
-        <nav class="header__nav">
-            <ul class="header__nav--options">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Géneros</a></li>
-                <li><a href="">Películas</a></li>
-            </ul>
-            <form action="" method="post" class="header__nav--form">
-                <input type="text" name="search" id="" placeholder="Buscar">
+        <nav class="header__options">
+            <a href="#start">Inicio</a>
+            <div class="header__options--dropdown">
+                <a href="">Géneros</a>
+                <div class="link">
+                    <a href="#" class="link-item">Link 1</a>
+                    <a href="#" class="link-item">Link 2</a>
+                    <a href="#" class="link-item">Link 3</a>
+                    <a href="#" class="link-item">Link 4</a>
+                    <a href="#" class="link-item">Link 5</a>
+                    <a href="#" class="link-item">Link 6</a>
+                </div>
+            </div>
+            <div class="header__options--dropdown">
+                <a href="#movie">Películas</a>
+                <div class="link">
+                    <a href="#" class="link-item">Link 1</a>
+                    <a href="#" class="link-item">Link 2</a>
+                    <a href="#" class="link-item">Link 3</a>
+                    <a href="#" class="link-item">Link 4</a>
+                </div>
+            </div>
+            <form action="" method="post" autocomplete="off">
+                <input type="text" name="search" id="search" placeholder="Buscar">
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
-            <ul class="header__nav--log">
-                <li><a href="">Ingresar</a></li>
-            </ul>
+            <a href="" class="login"><i class="fa-solid fa-user"></i>Login</a>
         </nav>
     </header>
     <main class="container">
+        
         <section class="start" id="start">
-            <article class="start__contenedor">
-                <h2>Título película</h2>
-                <button><i class="fa-solid fa-play"></i>Reproducir</button>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus debitis repudiandae odio corporis dolorum quam. Obcaecati similique nesciunt totam.</p>
+            <article class="start__article">
+                <h2 class="start__article--item">Título película</h2>
+                <button class="start__article--item"><i class="fa-solid fa-play"></i>Reproducir</button>
+                <p class="start__article--item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum id ad possimus voluptatum illum illo soluta reiciendis aliquam blanditiis? Sunt?</p>
             </article>
         </section>
-        <section class="movies">
-            <div class="movies__contenedor">
-                <article class="movies__contenedor--article">
-                    <img src="images/sexo.jpg" alt="sexo.jpg">
-                    <h3>Sexo la película</h3>
+        
+        <section class="movie" id="movie">
+            <div class="movie__container">
+                <article class="movie__container--article">
+                    <div class="movie__container--article-img">
+                        <img src="images/thebatman.jpg" alt="">
+                        <div class="layer"><i class="fa-regular fa-circle-play"></i></div>
+                    </div>
+                    <p class="movie__container--article-title">Titulo película</p>
+                </article>
+                <article class="movie__container--article">
+                    <div class="movie__container--article-img">
+                        <img src="images/laformadelagua.jpg" alt="">
+                        <div class="layer"><i class="fa-regular fa-circle-play"></i></div>
+                    </div>
+                    <p class="movie__container--article-title">Titulo película</p>
+                </article>
+                <article class="movie__container--article">
+                    <div class="movie__container--article-img">
+                        <img src="images/jojorabbit.jpg" alt="">
+                        <div class="layer"><i class="fa-regular fa-circle-play"></i></div>
+                    </div>
+                    <p class="movie__container--article-title">Titulo película</p>
+                </article>
+                <article class="movie__container--article">
+                    <div class="movie__container--article-img">
+                        <img src="images/moonrisekingdom.jpg" alt="">
+                        <div class="layer"><i class="fa-regular fa-circle-play"></i></div>
+                    </div>
+                    <p class="movie__container--article-title">Titulo película</p>
+                </article>
+                <article class="movie__container--article">
+                    <div class="movie__container--article-img">
+                        <img src="images/forrestgump.jpg" alt="">
+                        <div class="layer"><i class="fa-regular fa-circle-play"></i></div>
+                    </div>
+                    <p class="movie__container--article-title">Titulo película</p>
+                </article>
+                <article class="movie__container--article">
+                    <div class="movie__container--article-img">
+                        <img src="images/fightclub.jpg" alt="">
+                        <div class="layer"><i class="fa-regular fa-circle-play"></i></div>
+                    </div>
+                    <p class="movie__container--article-title">Titulo película</p>
+                </article>
+                <article class="movie__container--article">
+                    <div class="movie__container--article-img">
+                        <img src="images/bigfish.jpg" alt="">
+                        <div class="layer"><i class="fa-regular fa-circle-play"></i></div>
+                    </div>
+                    <p class="movie__container--article-title">Titulo película</p>
+                </article>
+                <article class="movie__container--article">
+                    <div class="movie__container--article-img">
+                        <img src="images/backtothefuture.jpg" alt="">
+                        <div class="layer"><i class="fa-regular fa-circle-play"></i></div>
+                    </div>
+                    <p class="movie__container--article-title">Titulo película</p>
                 </article>
             </div>
         </section>
+
     </main>
     <footer class="footer">
-        <nav class="footer__nav">
-            <ul>
-                <li><h2><a href="">Piratas del Caribe</a></h1></li>
-                <li><a href="">Inicio</a></li>
-            </ul>
-        </nav>
-        <article class="footer__article">
-            <h2>Redes</h2>
-            <ul>
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-            </ul>
-        </article>
-        <p>&copy; este proyecto fue creado para realizar practicas y no tiene ningún ánimo de lucro, todos los derechos reservados a sus respectivos autores.</p>
+        <div class="footer__container">
+            <nav class="footer__container--logo">
+                <h2>Piratas del caribe</h2>
+                <a href="#start">Inicio</a>
+            </nav>
+            <nav class="footer__container--redes">
+                <h2>Redes</h2>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+            <p>&copy; Página creada para realizar prácticas sin ánimo de lucro, todo el contenido reservado para sus respectivos autores</p>
+        </div>
     </footer>
 </body>
 </html>
