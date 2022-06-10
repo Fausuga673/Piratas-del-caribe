@@ -1,10 +1,6 @@
 <?php include("pages/header.php") ?>
 <?php include("pages/start.php") ?>
-        <nav class="moviesnav">
-            <h2>Películas</h2>
-            <a href="#">Populares</a>
-            <a href="#">Estrenos</a>
-        </nav>
+<?php include("pages/moviesnav.php") ?>
         <section class="movie" id="movie">
             <div class="movie__container">
                 <article class="movie__container--article">
