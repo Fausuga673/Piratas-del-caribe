@@ -25,17 +25,18 @@
     <link rel="stylesheet" href="css/footer.css">
 
     <!-- JS -->
-    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
 
 </head>
 <body>
     <header class="header" id="header">
         <div class="header__logo">
             <a href="#start"><h1>Piratas del caribe</h1></a>
+            <a href=""><i class="fa fa-bars"></i></a>
         </div>
         <nav class="header__options">
-            <a href="#start">Inicio</a>
-            <div class="header__options--dropdown">
+            <a href="#start" class="a-inicio">Inicio</a>
+            <div class="header__options--dropdown categories">
                 <a href="">Categorías</a>
                 <div class="link">
                     <a href="#" class="link-item">Link 1</a>
@@ -46,7 +47,7 @@
                     <a href="#" class="link-item">Link 6</a>
                 </div>
             </div>
-            <div class="header__options--dropdown">
+            <div class="header__options--dropdown movies">
                 <a href="#movie">Películas</a>
                 <div class="link">
                     <a href="#" class="link-item">Populares</a>
