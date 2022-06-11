@@ -16,7 +16,7 @@
 }
 
 .moviesnav a {
-    font-size: min(20px, 3vw);
+    font-size: min(20px, 4vw);
 }
 
 .moviesnav a:hover {
