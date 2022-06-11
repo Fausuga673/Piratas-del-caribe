@@ -51,18 +51,18 @@
         <nav class="header__options" id="header__options">
             <a href="#start" class="a-inicio">Inicio</a>
             <div class="header__options--dropdown categories">
-                <a href="">Categorías</a>
+                <a href="" class="section">Categorías</a>
                 <div class="link">
-                    <a href="#" class="link-item">Link 1</a>
-                    <a href="#" class="link-item">Link 2</a>
-                    <a href="#" class="link-item">Link 3</a>
-                    <a href="#" class="link-item">Link 4</a>
-                    <a href="#" class="link-item">Link 5</a>
-                    <a href="#" class="link-item">Link 6</a>
+                    <a href="#" class="link-item">Acción</a>
+                    <a href="#" class="link-item">Drama</a>
+                    <a href="#" class="link-item">Comedia</a>
+                    <a href="#" class="link-item">Terror</a>
+                    <a href="#" class="link-item">Aventura</a>
+                    <a href="#" class="link-item">Romance</a>
                 </div>
             </div>
             <div class="header__options--dropdown movies">
-                <a href="#movie">Películas</a>
+                <a href="#movie" class="section">Películas</a>
                 <div class="link">
                     <a href="#" class="link-item">Populares</a>
                     <a href="#" class="link-item">Estrenos</a>

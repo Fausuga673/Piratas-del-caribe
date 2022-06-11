@@ -1,21 +1,22 @@
 .moviesnav {
     background: var(--color-darkpink);
     padding: 0px 5vw;
+    width: 100%;
     display: flex;
     align-items: center;
 }
 
 .moviesnav h2, .moviesnav a {
-    margin-right: 2rem;
+    margin-right: 5vw;
     color: var(--color-white);
 }
 
 .moviesnav h2 {
-    font-size: min(35px, 10vw);
+    font-size: min(35px, 5vw);
 }
 
 .moviesnav a {
-    font-size: min(20px, 8vw);
+    font-size: min(20px, 3vw);
 }
 
 .moviesnav a:hover {
