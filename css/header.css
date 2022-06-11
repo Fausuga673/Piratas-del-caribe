@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    height: 120px;
+/*     height: 120px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,6 +33,11 @@
     justify-content: space-between;
 }
 
+.link {
+    display: flex;
+    flex-direction: column;
+}
+
 .header__options a {
     padding: .5vw;
     border-radius: 5px;
@@ -40,30 +45,6 @@
 
 .header__options a:hover {
     color: var(--color-pink);
-}
-
-.link {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    width: min(20rem, 20vw);
-    margin-top: 6px;
-    padding: 10px;
-    border-radius: 5px;
-    background: var(--color-pink);
-}
-
-.link-item {
-    color: var(--color-gray);
-}
-
-.link .link-item:hover {
-    color: var(--color-white);
-    background-color: var(--color-darkpink)
-}
-
-.header__options--dropdown:hover .link {
-    display: flex;
 }
 
 .header__options form {
@@ -107,15 +88,39 @@ header.sticky {
     .header {
         flex-direction: row;
     }
+
+    .link {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: min(20rem, 20vw);
+        margin-top: 6px;
+        padding: 10px;
+        border-radius: 5px;
+        background: var(--color-pink);
+    }
+    
+    .link-item {
+        color: var(--color-gray);
+    }
+    
+    .link .link-item:hover {
+        color: var(--color-white);
+        background-color: var(--color-darkpink)
+    }
+    
+     .header__options--dropdown:hover .link {
+        display: flex;
+    }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1200px) {
     .header__logo .fa-bars {
         display: none;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1200px) {
 
     .header {
         padding: 3vw 5vw;
@@ -134,14 +139,42 @@ header.sticky {
     }
 
     .header__options {
+        grid-template-areas: 
+            "search search"
+            "inicio login"
+            "categories categories"
+            "movies movies";
+    }
+
+    #header__options{
         display: none;
     }
 
-    .header:hover > .header .header__options {
+    .header__options form {
+        grid-area: search;
+    }
+
+    .header__options form input{
+        width: 100%;
+        padding: 1vw;
+    }
+
+    .link {
         display: flex;
     }
-}
 
+    .a-inicio {
+        grid-area: inicio;
+    }
+
+    .categories {
+        grid-area: categories;
+    }
+
+    .movies {
+        grid-area: movies;
+    }
+}
 
 
 

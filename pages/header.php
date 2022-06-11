@@ -29,12 +29,26 @@
 
 </head>
 <body>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("header__options");
+            if (x.style.display === "grid") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "grid";
+            }
+        }
+    </script>
+
     <header class="header" id="header">
         <div class="header__logo">
             <a href="#start"><h1>Piratas del caribe</h1></a>
-            <a href=""><i class="fa fa-bars"></i></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        <nav class="header__options">
+        <nav class="header__options" id="header__options">
             <a href="#start" class="a-inicio">Inicio</a>
             <div class="header__options--dropdown categories">
                 <a href="">Categorías</a>
