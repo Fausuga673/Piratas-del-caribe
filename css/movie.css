@@ -61,6 +61,11 @@
     border-radius: 10px;
 }
 
+.movie__container--article-img a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
 .movie__container--article-img .layer {
     display: none;
 }
