@@ -59,6 +59,7 @@
                     </div>
                     <p class="movie__container--article-title">Titulo película</p>
                 </article>
+                
             </div>
         </section>
 <?php include("pages/footer.php") ?>

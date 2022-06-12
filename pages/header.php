@@ -26,25 +26,14 @@
 
     <!-- JS -->
     <script src="js/header.js"></script>
+    <script src="js/functions.js"></script>
 
 </head>
 <body>
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("header__options");
-            if (x.style.display === "grid") {
-            x.style.display = "none";
-            } else {
-            x.style.display = "grid";
-            }
-        }
-    </script>
-
     <header class="header" id="header">
         <div class="header__logo">
             <a href="#start"><h1>Piratas del caribe</h1></a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="desplegarMenu()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
