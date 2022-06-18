@@ -26,13 +26,13 @@
 }
 
 .footer__container--logo h2 {
-    font-size: min(30px, 10vw);
+    font-size: min(30px, 5vw);
     margin-right: 1vw;
 }
 
 .footer__container--logo a {
     font-weight: 1000;
-    font-size: min(20px, 10vw);
+    font-size: min(20px, 3vw);
 }
 
 .footer__container--logo a:hover {
@@ -54,7 +54,7 @@
 
 .footer__container--redes h2,
 .footer__container--redes ul li a i {
-    font-size: min(30px, 10vw);
+    font-size: min(30px, 5vw);
     margin-right: 20px;
 }
 
@@ -63,12 +63,17 @@
 }
 
 .footer__container p {
-    font-size: min(12px, 5vw);
+    font-size: min(12px, 3vw);
     text-align: justify;
 }
 
 
 @media (max-width: 950px) {
+
+    .footer {
+        padding: 5vw;
+        bottom: 0;
+    }
 
     .footer__container {
         grid-template-columns: 50%;

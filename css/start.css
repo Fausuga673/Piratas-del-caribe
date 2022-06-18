@@ -11,6 +11,7 @@
         rgba(0, 0, 0, 0)
     ), url(../images/thebatmanbackground.jpg);
     background-size: cover;
+    background-position: center top;
 }
 
 .start__article {

@@ -1,5 +1,4 @@
-    </main>
-    <footer class="footer">
+        <footer class="footer">
             <div class="footer__container">
                 <nav class="footer__container--logo">
                     <h2>Piratas del caribe</h2>

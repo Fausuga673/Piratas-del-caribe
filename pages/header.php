@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/start.css">
     <link rel="stylesheet" href="css/movie.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/playmovie.css">
 
     <!-- JS -->
     <script src="js/header.js"></script>
@@ -32,7 +33,7 @@
 <body>
     <header class="header" id="header">
         <div class="header__logo">
-            <a href="#start"><h1>Piratas del caribe</h1></a>
+            <a href="index.php"><h1>Piratas del caribe</h1></a>
             <a href="javascript:void(0);" class="icon" onclick="desplegarMenu()">
                 <i class="fa fa-bars"></i>
             </a>
