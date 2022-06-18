@@ -1,0 +1,70 @@
+.containerform {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-white);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: min(500px, 70vw);
+    padding: 1vw;
+    text-align: center;
+    color: var(--color-white);
+    background: linear-gradient(
+        0deg,
+        var(--color-gray),
+        rgb(0, 0, 0)
+    );
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgb(0, 0, 0, .5);
+}
+
+h2 {
+    font-size: min(35px, 8vw);
+    margin: 2vw 0;
+}
+
+input, button {
+    padding: 1vw;
+    margin-bottom: 3vw;
+    border: none;
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    background: var(--color-pink);
+    font-weight: 1000;
+    color: var(--color-white);
+    font-size: min(18px, 6vw);
+}
+
+p {
+    color: var(--color-lightgray);
+    font-size: min(14px, 7vw);
+}
+
+a {
+    font-weight: 1000;
+    color: var(--color-white);
+    font-size: min(18px, 6vw);
+    margin-bottom: 20px;
+}
+
+a:hover {
+    color: var(--color-pink);
+}
+
+@media (min-width: 1300px) {
+
+    input, button {
+        margin-bottom: 1.5vw;
+
+}

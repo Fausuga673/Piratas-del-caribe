@@ -62,6 +62,6 @@
                 <input type="text" name="search" id="search" placeholder="Buscar">
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
-            <a href="" class="login"><i class="fa-solid fa-user"></i>Login</a>
+            <a href="admin/login.php" class="login"><i class="fa-solid fa-user"></i>Login</a>
         </nav>
     </header>
